@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sellpy Formulär</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainGrid">
+      <header>
+        <nav>
+          <img src="clear_logo.png" alt="sellpy logo" class="logo_img" />
+
+          <a href="#">Köp </a>
+
+          <a href="#">Sälja</a>
+
+          <label for="choose"></label>
+          <select name="category" id="choose">
+            <option value="">Välj kategori</option>
+            <option value="överdel">Överdel</option>
+            <option value="underdel">Underdel</option>
+            <option value="skor">Skor</option>
+            <option value="accesoarer">Accesoarer</option>
+          </select>
+
+          <a href="#">Kundkorg </a>
+        </nav>
+
+        <h1>Skapa Konto</h1>
+      </header>
+
+      <div class="formContainer">
+        <form action="https://httpbin.org/anything" method="post">
+          <div class="firstnam">
+            <label for="Fname">Förnamn</label>
+            <input type="text" id="Fname" name="firstname" />
+          </div>
+
+          <div class="lastname">
+            <label for="Lname">Efternamn</label>
+            <input type="text" name="lastname" id="Lname" />
+          </div>
+
+          <div class="email">
+            <label for="Email">E-post</label>
+            <input type="email" name="email" id="Email" />
+          </div>
+
+          <div class="password">
+            <label for="Password">Lösenord</label>
+            <input type="password" name="password" id="Password" />
+          </div>
+
+          <div class="check">
+            <input type="checkbox" name="agree" id="Agree" required />
+            <label for="Agree">Jag godkänner villkoren</label>
+            <br />
+            <input type="checkbox" name="discount" id="Discount" />
+            <label for="Discount"
+              >Jag vill ha 10% rabatt vid mitt första köp</label
+            >
+          </div>
+          <div class="radio">
+            <h4>Jag är här för att:</h4>
+            <input type="radio" value="buy" name="here for" id="Buy" />
+            <label for="Buy">Köpa</label>
+
+            <input type="radio" value="sell" name="here for" id="Sell" />
+            <label for="Sell">Sälja</label>
+
+            <input type="radio" value="both" name="here for" id="Both" />
+            <label for="Both">Både köpa och sälja</label>
+          </div>
+
+          <div class="send">
+            <button type="submit">Skapa Konto</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer><h3>Tack för att du vill bli medlem hos oss!</h3></footer>
+  </body>
+</html>
