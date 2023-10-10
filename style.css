@@ -9,7 +9,7 @@
 
 .mainGrid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 400px 1fr;
   gap: 20px;
 }
 
@@ -53,6 +53,7 @@ select {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #616365;
+  width: 100%;
 }
 .formContainer {
   grid-area: 2 / 2;
@@ -60,7 +61,7 @@ select {
 
 .formContainer form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -68,10 +69,10 @@ select {
   grid-column: 1;
 }
 .email {
-  grid-column: 1;
+  grid-column: 1 / 3;
 }
 .password {
-  grid-column: 1;
+  grid-column: span 2;
 }
 .check {
   grid-column: 1;
